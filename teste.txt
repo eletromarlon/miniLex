@@ -1,0 +1,15 @@
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+
+int main(){
+    int x = 3, main
+    if ! x :
+        x = 3
+    # Esse será um comentario no código #
+}
