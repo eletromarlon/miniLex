@@ -1,7 +1,8 @@
 int main(){
-    # Outro comentario qualquer #
+    # Primeiro any coment #
     int x = 3, main
     if ! x :
         x = 3
-    # Esse será um comentario no código #
+    # Segundo any coment #
+    # Terceiro any coment #
 }
