@@ -1,13 +1,5 @@
-# #
-# #
-# #
-# #
-# #
-# #
-# #
-# #
-
 int main(){
+    # Outro comentario qualquer #
     int x = 3, main
     if ! x :
         x = 3
