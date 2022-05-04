@@ -5,7 +5,7 @@ def verifyComent(linguica):
     finishComent = 0
     coment = ""
     
-    print("Codigo inicial\n", linguica)
+    #print("Codigo inicial\n", linguica)
     
     for n in linguica:
         if n == '#' and i < 1:
@@ -17,6 +17,7 @@ def verifyComent(linguica):
                 finishComent = j
                 coment = linguica[(startComent + 1):(finishComent)]
                 linguica = linguica[:startComent] + linguica[finishComent + 1:]
-                print("\n\n\nComentario removido\n ", coment, "\nfechamento na string posicao ", j)    
+                #print("\n\n\nComentario removido\n ", coment, "\nfechamento na string posicao ", j)    
                 return linguica
         j += 1
+    return -1
