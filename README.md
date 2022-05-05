@@ -17,10 +17,10 @@ para executar basta apenas ter uma versão Python instalada no sistema e rodar o
 
 - [x] Indentificar tipo
 - [x] Indentificar condicional
-- [ ] Indentificar digitos 
-- [ ] Indentificar letras
+- [x] Indentificar digitos 
+- [x] Indentificar letras
 - [x] Gerar Tabela
 - [x] Excluir comentario
 - [x] Excluir todos os comentarios fechados
-- [ ] Analisar o codigo sem os comentario
-- [ ] Configurar os erros encontrados no codigo
+- [x] Analisar o codigo sem os comentario
+- [/] Configurar os erros encontrados no codigo
