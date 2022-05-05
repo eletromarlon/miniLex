@@ -1,9 +1,15 @@
 def verifyAllComent(linguica):
     acc1 = linguica
     i = 0
+    k = 0
     
-    while verifyComent(acc1) != -1 :
+    for m in linguica:
+        if m == '#':
+            k += 1
+    
+    while (k/2) > 0 :
         i += 1
+        k -= 2
         acc1 = verifyComent(acc1)
         if acc1 == 400:
             return (400)
@@ -14,15 +20,13 @@ def verifyComent(linguica):
     i = 0
     j = 0
     k = 0
-
     startComent = 0
     finishComent = 0
-    coment = ""
+    coment = []
     
     for m in linguica:
         if m == '#':
             k += 1
-    
     
     for n in linguica:
         if n == '#' and i < 1:
@@ -31,12 +35,13 @@ def verifyComent(linguica):
         else:
             if n == '#' and i > 0:
                 finishComent = j
-                coment = linguica[(startComent + 1):(finishComent)]
+                coment.append(linguica[(startComent + 1):(finishComent)]) 
                 linguica = linguica[:startComent] + linguica[finishComent + 1:]
-                print("\n\nComentario removido\n ", coment, j)    
+                #print(coment)
                 if k % 2 != 0:
                     return 400
                 else:
+                    print(coment)
                     return linguica
         j += 1
     return -1

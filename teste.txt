@@ -1,10 +1,11 @@
 int main(){
-# Primeiro any coment #
+# Este é o primeiro comentario #
 int x = 3
+bool y = true
+float w = 1.2
 if ! x :
-    x = 3
-x + 1
+    x = 7
 m and n
-# Segundo any coment #
-# Terceiro any coment #
+# Este é o segundo comentario #
+# Este é o terceiro comentario #
 }
