@@ -5,6 +5,9 @@ def geradorTable(code):
     outTable = []
     
     coments = mkComents.verifyAllComent(code)
+    
+    if coments == -1 or coments == 400:
+        return("Erro em fechamento de comentario", ' ')
     linhas = coments.split("\n")
 
     if coments != 400:
