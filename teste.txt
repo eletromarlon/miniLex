@@ -1,8 +1,10 @@
 int main(){
-    # Primeiro any coment #
-    int x = 3, main
-    if ! x :
-        x = 3
-    # Segundo any coment #
-    # Terceiro any coment #
+# Primeiro any coment #
+int x = 3
+if ! x :
+    x = 3
+x + 1
+m and n
+# Segundo any coment #
+# Terceiro any coment #
 }

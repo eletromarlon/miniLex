@@ -21,6 +21,6 @@ para executar basta apenas ter uma versão Python instalada no sistema e rodar o
 - [ ] Indentificar letras
 - [x] Gerar Tabela
 - [x] Excluir comentario
-- [ ] Excluir todos os comentarios fechados
+- [x] Excluir todos os comentarios fechados
 - [ ] Analisar o codigo sem os comentario
 - [ ] Configurar os erros encontrados no codigo

@@ -1,14 +1,37 @@
+from soupsieve import comments
 import mkTokens
 import mkComents
-import testeComentarioOK
-#import analisador
 arq = open("teste.txt")
 arquivo = arq.read()
-linhas = arq.readlines()
 
-teste = mkComents.verifyAllComent(arquivo)
+coments = mkComents.verifyAllComent(arquivo)
 
-print(teste)
+linhas = coments.split("\n")
+
+#comentLine = coments.split("\n")
+
+if coments != 400:
+    intCabecalho = mkTokens.verificaTipo(linhas)
+    parenteses = mkTokens.verificaParenteses(linhas)
+    chaves = mkTokens.verificaChaves(linhas)
+    outros = mkTokens.verificaOutros(linhas)
+    reservedWord = mkTokens.verificaMain(linhas)
+    atribuicao= mkTokens.verificaAtribuicao(linhas)
+    aritmetico = mkTokens.verificaAritmetico(linhas)
+    negacao = mkTokens.verificaNegacao(linhas)
+    logicos = mkTokens.verificaLogico(linhas)
+
+#verifyFechamento.verifyChaves(pontuacao)
+
+print(parenteses)
+print(chaves)
+print(outros)
+print(reservedWord)
+print(intCabecalho)
+print(atribuicao)
+print(aritmetico)
+print(negacao)
+print(logicos)
 
 # comentFuncionando = testeComentarioOK.verifyComent(arquivo)
 
@@ -16,11 +39,7 @@ print(teste)
 
 #Antes de mandar para analisador, devo mandar para verificador de comentario mkComents.
 
-# cabecalho = mkTokens.verificaInt(comentFuncionando.split("\n"))
-# pontuacao = mkTokens.verificaPontuacao(comentFuncionando.split("\n"))
-# atribuicao = mkTokens.verificaAtribuicao(comentFuncionando.split("\n"))
-# funcao = mkTokens.verificaMain(comentFuncionando.split("\n"))
-# negacao = mkTokens.verificaNegacao(comentFuncionando.split("\n"))
+
 
 # for n in cabecalho:
 #     print(n)
